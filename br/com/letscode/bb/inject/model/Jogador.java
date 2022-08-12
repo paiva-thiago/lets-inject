@@ -5,8 +5,20 @@ public class Jogador {
     private String nome;
     private String jogo;
 
+    public Jogador(){
+        this.id= 0L;
+    }
     public Long getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Jogador{" +
+                "id=" + id +
+                ", nome='" + getNome() + '\'' +
+                ", jogo='" + getJogo() + '\'' +
+                '}';
     }
 
     public void setId(Long id) {
